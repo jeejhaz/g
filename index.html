@@ -85,7 +85,7 @@ $('#app').innerHTML=V[S.tab]();window.scrollTo(0,0);
 if(S.tab=='home')filt('');if(S.tab=='tool')upT()}
 const V={
 home(){const pend=S.ord.reduce((a,o)=>a+o.sv,0),real=S.base.sv,goal=1500;
-return hdr('GRAB MERCHANT · CONCEPT','Procurement Hub','ซื้อวัตถุดิบคุ้มขึ้นสำหรับร้านของคุณ')+`<div class="pad">
+return hdr('GRAB MERCHANT · CONCEPT','Grabsource','ซื้อวัตถุดิบคุ้มขึ้นสำหรับร้านของคุณ')+`<div class="pad">
 <div class="card"><div class="s">เป้าหมายการประหยัดเดือนนี้</div><div class="big">${F(goal)}</div>
 <div class="bar"><i style="width:${Math.min(100,(real+pend)/goal*100)}%"></i></div>
 <div class="two" style="margin-top:8px"><div class="k"><small>ประหยัดแล้ว <span class="tag g">จริง</span></small><b>${F(real)}</b></div><div class="k"><small>รอจัดส่ง <span class="tag">ประมาณการ</span></small><b>${F(pend)}</b></div></div>
